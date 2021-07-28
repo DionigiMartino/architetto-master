@@ -1,0 +1,305 @@
+@import "./variables";
+
+.cont__header {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &_percentage {
+    width: 350px;
+    height: 200px;
+    background-color: #fff;
+    position: fixed;
+    top: 15%;
+    right: 0;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top-left-radius: 100px;
+    border-bottom-left-radius: 100px;
+    transition: transform .8s;
+
+    @media(max-width: 550px){
+      display: none;
+    }
+
+    & > p {
+      font-size: 15px !important;
+      width: 40% !important;
+      text-align: center !important;
+    }
+
+    & > div {
+      width: 125px;
+      height: 125px;
+      border: 10px solid $grey_color;
+      border-radius: 100px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+
+      & > div {
+        width: 120%;
+        height: 120%;
+        border-radius: 100px;
+        animation-name: percentage;
+        animation-duration: 1.5s;
+        animation-timing-function: linear;
+        animation-fill-mode: forwards;
+        transition: border 0.8s;
+        position: absolute;
+        top: -10px;
+        left: -10px;
+      }
+    }
+  }
+
+  &_slide {
+    width: 50vw;
+    height: 100vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  &_menu {
+    width: 100%;
+    height: fit-content;
+    background-color: $black_color;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99999;
+    transition: transform 0.6s;
+    padding: 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+
+    & > svg > path {
+      fill: #fff;
+    }
+
+    & > ul {
+      width: 100%;
+      height: fit-content;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      margin-top: 25px;
+
+      & > li {
+        margin: 5% 0;
+
+        & > a {
+          color: #fff;
+          text-decoration: none;
+          font-size: 21px;
+          font-weight: bold;
+          text-align: left;
+        }
+      }
+    }
+
+    &_desktop {
+      width: fit-content;
+      height: 50px;
+      display: none;
+      align-items: center;
+
+      @media (min-width: 1124px) {
+        display: flex;
+      }
+
+      & > li {
+        margin: 0 15px;
+
+        & > a {
+          text-decoration: none;
+          color: $black_color;
+          font-size: 14px;
+          font-weight: 500;
+          text-transform: uppercase;
+          transition: color 0.6s;
+
+          &:hover {
+            color: $cyan_color;
+          }
+        }
+      }
+    }
+  }
+
+  &_inside {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 15px 0;
+    position: fixed;
+    z-index: 999999;
+
+    @media (max-width: 550px) {
+      z-index: 9997;
+    }
+
+    & > a {
+      & > img {
+        width: 350px;
+        object-fit: contain;
+
+        @media (max-width: 550px) {
+          width: 250px;
+        }
+      }
+    }
+
+    & > svg {
+      @media (min-width: 1124px) {
+        display: none;
+      }
+    }
+
+    & > img {
+      width: 35px;
+      object-fit: contain;
+    }
+  }
+
+  &_intro {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    background-size: cover;
+    background-position: center;
+
+    &[id="about"] {
+      background-image: url(../../media/img/home/4.jpg);
+    }
+
+    &[id="methodPage"] {
+      background-image: url(../../media/img/ilNostroMetodo.jpg);
+    }
+
+    &[id="offersPage"] {
+      background-image: url(../../media/img/offerteTecniche.jpg);
+    }
+
+    &[id="gallery"] {
+      background-image: url(../../media/img/home/banner_galleria.jpg);
+    }
+
+    &[id="contact"] {
+      background-image: url(../../media/img/contatti.jpg);
+      width: 99.2vw;
+      background-size: cover;
+    }
+
+    &[id="lavora_con_noi"] {
+      background-image: url(../../media/img/lavora_con_noi.jpg);;
+    }
+
+    &_cta {
+      width: fit-content;
+      min-width: 200px;
+      height: fit-content;
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: -120px;
+      transform: translateY(200%);
+      animation-name: appearCTA;
+      animation-timing-function: linear;
+      animation-fill-mode: forwards;
+      animation-duration: 1s;
+      transition: transform 1s, opacity 2s;
+      opacity: 0;
+      bottom: 0px;
+
+      @media (min-width: 1124px) {
+        width: fit-content;
+        margin-bottom: 50px;
+
+        & > h2 {
+          line-height: 30px !important;
+        }
+      }
+
+      & > h2 {
+        width: fit-content;
+        font-size: 21px;
+        color: $black_color;
+        line-height: 35px;
+        font-weight: bold;
+        background-color: #fff;
+        padding: 15px;
+        text-align: center;
+      }
+
+      & > a {
+        align-self: flex-end;
+        transition: transform 0.7s;
+        margin: 15px auto;
+
+        & > svg {
+          width: 35px;
+          height: 35px;
+          fill: #fff;
+          transform: rotate(90deg);
+          animation-name: loop;
+          animation-timing-function: linear;
+          animation-fill-mode: forwards;
+          animation-iteration-count: infinite;
+          animation-duration: 1.5s;
+          transition: transform 1.5s ease-in-out;
+        }
+
+        &:hover {
+          transform: translateY(5px);
+        }
+      }
+    }
+  }
+}
+
+@keyframes appearCTA {
+  from {
+    transform: translateY(200%);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes loop {
+  from {
+    transform: translateY(0) rotate(90deg);
+  }
+
+  to {
+    transform: translateY(10px) rotate(90deg);
+  }
+}
+
+@keyframes percentage {
+  from {
+    border: 0;
+  }
+
+  to {
+    border: 10px solid $cyan_color;
+  }
+}

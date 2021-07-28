@@ -1,0 +1,118 @@
+.cont__footer {
+  width: 100%;
+  height: fit-content;
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #1d1d1d;
+  margin-top: 35px;
+}
+.cont__footer_logoSocial {
+  width: 60%;
+  height: fit-content;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  margin: 25px 0;
+}
+@media (min-width: 1124px) {
+  .cont__footer_logoSocial {
+    width: 20%;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.cont__footer_logoSocial_logo {
+  width: 100%;
+  object-fit: contain;
+}
+.cont__footer_logoSocial_social {
+  width: 65%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 15px auto 0;
+}
+.cont__footer_logoSocial_social > li {
+  margin-top: 10px;
+}
+.cont__footer_logoSocial_social > li > a > svg {
+  width: 25px;
+  height: 25px;
+  object-fit: contain;
+}
+.cont__footer_contactList {
+  width: 60%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  color: #fff;
+  font-weight: bold;
+}
+.cont__footer_contactList[id=contatti] {
+  width: 80%;
+}
+.cont__footer_contactList[id=contatti] > div > li {
+  color: #393e3f;
+}
+.cont__footer_contactList[id=contatti] > div > li > svg {
+  fill: #393e3f;
+}
+.cont__footer_contactList[id=contatti] > div > li > a {
+  color: #393e3f !important;
+}
+@media (min-width: 1124px) {
+  .cont__footer_contactList {
+    flex-direction: row;
+  }
+}
+.cont__footer_contactList > div {
+  width: 100%;
+  height: 150px;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+}
+.cont__footer_contactList > div > li {
+  width: 100%;
+  margin: 10px 0;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  justify-content: space-between;
+}
+@media (min-width: 1124px) {
+  .cont__footer_contactList > div > li {
+    justify-content: unset;
+  }
+}
+.cont__footer_contactList > div > li > svg {
+  width: 25px;
+  object-fit: contain;
+  margin-right: 15px;
+}
+.cont__footer_contactList > div > li > a {
+  color: #fff;
+  text-decoration: none;
+  width: 90%;
+  font-size: 12px;
+}
+.cont__footer_underFooter {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+}
+.cont__footer_underFooter > img {
+  width: 125px;
+  object-fit: contain;
+}
+
+/*# sourceMappingURL=footer.module.css.map */

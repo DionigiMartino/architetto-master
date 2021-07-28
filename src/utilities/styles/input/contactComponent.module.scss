@@ -1,0 +1,84 @@
+@import './variables';
+
+.cont__form {
+    width: 80%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0 auto;
+
+    @media(min-width: 1124px){
+        width: 40%;
+    }
+
+    &_title {
+        color: $black_color;
+        font-size: 22px;
+        font-weight: bold;
+        width: 80%;
+        margin: 10% auto 5%;
+        text-align: left;
+
+        @media(min-width: 1124px){
+            width: 40%;
+            margin: 1.5% auto 1.5%;
+        }
+    }
+
+    & > div {
+        width: 100%;
+        height: fit-content;
+        padding: 10px 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: $cyan_color;
+        margin: 5% auto;
+
+        @media(min-width: 1124px){
+            margin: 2.5% auto;
+        }
+
+        &[id="message"]{
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        & > label {
+            color: $black_color;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        & > input, textarea{
+            width: 60%;
+            height: fit-content;
+            min-height: 30px;
+            padding: 5px 10px;
+            border: none;
+            color: $black_color;
+
+            &:focus {
+                outline: none;
+            }
+        }
+
+        & > textarea {
+            width: 100%;
+            margin-top: 10px;
+        }
+    }
+
+    & > button {
+        color: $black_color;
+        border: none;
+        background: transparent;
+        font-weight: bold;
+        font-size: 16px;
+        border-bottom: 2px solid $black_color;
+        padding: 0;
+        margin-top: 20px;
+        cursor: pointer;
+    }
+}
