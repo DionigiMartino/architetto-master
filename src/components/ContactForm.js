@@ -1,5 +1,6 @@
 import React, { useState, useEffect} from "react";
 import contactStyle from "../utilities/styles/output/contactComponent.module.css";
+import formmail from "./ContactPage/formmail.php"
 
 function ContactForm(props) {
   const [clicked, setClick] = useState(false);
@@ -17,7 +18,7 @@ function ContactForm(props) {
     <>
       <h2 className={contactStyle.cont__form_title}>Lavora con noi</h2>
 
-      <form method="POST" className={contactStyle.cont__form}>
+      <form method="POST" className={contactStyle.cont__form} action={formmail}>
         <div>
           <label for="nome">Nome</label>
           <input type="text" id="nome" name="nome" />
