@@ -97,6 +97,7 @@ import cover24_4 from "../../utilities/media/img/galleryPage/pavia/4.jpg";
 
 import cover25 from "../../utilities/media/img/galleryPage/olbia/1.jpg";
 import cover26 from "../../utilities/media/img/galleryPage/olbia/2.jpg";
+import Intro from "../Header/Intro";
 
 function Gallery() {
   const [open, setOpened] = useState(false);
@@ -106,11 +107,12 @@ function Gallery() {
   function checkId(value) {
     setOpened(true);
     setId(value);
+    console.log("position prima", position)
 
     setTimeout(() => {
       let positionY = window.scrollY;
 
-      console.log(positionY);
+      console.log("posizione dopo il click", positionY);
       setPosition(positionY);
 
       window.scrollTo({
@@ -301,6 +303,8 @@ function Gallery() {
 
   return (
     <div className={galleryStyle.cont__about} id="gallery">
+      <Intro section="galleria" title="Galleria" />
+
       <ul className={galleryStyle.cont__about_gallery} id="list">
         {imagesCover.map((cover) => (
           <li onClick={() => checkId(cover.id)} id={cover.size} key={cover.id}>
@@ -320,7 +324,7 @@ function Gallery() {
           style={{
             left: open ? "0%" : "-150%",
             opacity: open ? "1" : "0",
-            top: position,
+            top: position - 1000,
           }}
           id="gallery"
         >

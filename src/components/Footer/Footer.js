@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import footerStyle from "../../utilities/styles/output/footer.module.css";
-import contactStyle from "../../utilities/styles/output/section.module.css";
 
 import LogoFooter from "../../utilities/media/img/logo_bianco.png";
 import LogoFooterAicon from "../../utilities/media/img/logoaicon.png";
@@ -245,7 +244,9 @@ function Footer() {
               info@coproject-studio.it
             </a>
           </li>
+        </div>
 
+        <div>
           <li>Ufficio Gare:</li>
 
           <li>
@@ -291,25 +292,8 @@ function Footer() {
         </div>
       </ul>
 
-      <div className={contactStyle.cont__about_descr_maps}>
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2999.547918271447!2d14.061003215696351!3d41.253404512252764!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x133aee52bdeeaaab%3A0xc1d896a84a182f6!2sVia%20Antonio%20Gramsci%2C%201%2C%2081057%20Teano%20CE!5e0!3m2!1sit!2sit!4v1625991809166!5m2!1sit!2sit"
-            allowfullscreen=""
-            loading="lazy"
-            className={contactStyle.cont__about_descr_maps_inside}
-            title="Mappa teano"
-          ></iframe>
-
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2797.3709986057274!2d9.178858215794072!3d45.48247334024445!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4786c1312b28bcf7%3A0x7fead8291a3b3f24!2sP.za%20Antonio%20Baiamonti%2C%203%2C%2020154%20Milano%20MI!5e0!3m2!1sit!2sit!4v1625992450772!5m2!1sit!2sit"
-            allowfullscreen=""
-            loading="lazy"
-            className={contactStyle.cont__about_descr_maps_inside}
-            title="Mappa Milano"
-          ></iframe>
-        </div>
-
       <div className={footerStyle.cont__footer_underFooter}>
+        <p>Copyright CoProject - Powered by</p>
         <img src={LogoFooterAicon} alt="Logo Footer Aicon" />
       </div>
     </div>

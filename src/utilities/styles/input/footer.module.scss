@@ -50,7 +50,7 @@
   }
 
   &_contactList {
-    width: 60%;
+    width: 65%;
     height: fit-content;
     display: flex;
     flex-direction: column;
@@ -121,9 +121,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px 0;
+    padding: 25px 0;
+
+    & > p {
+      font-size: 16px;
+      font-weight: bold;
+      color: #fff;
+    }
 
     & > img {
+      margin-left: 15px;
       width: 125px;
       object-fit: contain;
     }
