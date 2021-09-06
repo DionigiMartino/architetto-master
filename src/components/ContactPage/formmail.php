@@ -4,14 +4,14 @@
     $email= $_POST['email'];
     $indirizzo= $_POST['indirizzo'];
     $telefono = $_POST['telefono'];
-    $msg = $_POST['msg'];
+    $msg = $_POST['messaggio'];
 
     $numero_casuale = md5(time());
     $cod_delimitatore = "--=NextPart_$numero_casuale";
 
     $tipo_email="MIME-Version: 1.0\nContent-type: multipart/mixed;\n boundary=\"$cod_delimitatore\"\n\n";
     $mittente="From: $nome <$email>\n$tipo_email";
-    $destinatario= "preventivi@everpower.it";
+    $destinatario= "info@coproject-studio.it";
     $oggetto="Modulo Contatto - Informazioni";
     $test_mail="Messaggio inviato da $nome , email: $email, telefono: $telefono, indirizzo: $indirizzo, Messaggio: $msg";
 
