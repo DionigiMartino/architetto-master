@@ -123,7 +123,9 @@ function Home() {
           <div className={homeStyle.cont__home_formAccess_cta}>
             <img src={LogoHome} alt="Logo CoProject Studio" />
 
-            <img src={Arrow_2} id="arrow" alt="Logo CoProject Studio" />
+            <Link to="/contatti">
+              <img src={Arrow_2} id="arrow" alt="Logo CoProject Studio" />
+            </Link>
           </div>
         </div>
 
