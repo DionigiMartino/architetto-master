@@ -16,8 +16,8 @@ function MethodPage() {
 
       <div className={methodStyle.cont__about_division}>
         <img
-          src={servizi_1}
-          alt="Servizi 1"
+          src={servizi_2}
+          alt="Servizi 2"
           className={methodStyle.cont__about_images}
         />
 
@@ -74,8 +74,8 @@ function MethodPage() {
         </div>
 
         <img
-          src={servizi_2}
-          alt="Servizi 2"
+          src={servizi_1}
+          alt="Servizi 1"
           className={methodStyle.cont__about_images}
         />
       </div>

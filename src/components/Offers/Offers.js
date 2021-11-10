@@ -1,12 +1,17 @@
-import React from "react";
+import React, {useEffect} from "react";
 import Intro from "../Header/Intro";
 import offersStyle from "../../utilities/styles/output/section.module.css";
 import homeStyle from "../../utilities/styles/output/homeStyle.module.css";
 import { Link } from "react-router-dom";
 
+
 function Offers() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  });
+
   return (
-    <div className={offersStyle.cont__about}>
+    <div className={offersStyle.cont__about} id="listaServizi">
       <Intro section="offersPage" title="Offerte Tecniche & Servizi" />
 
       <ul className={homeStyle.cont__home_servizi_list}>

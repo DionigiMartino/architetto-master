@@ -87,7 +87,7 @@ function Header() {
           </li>
 
           <li>
-            <Link to="/lavoraConNoi">Lavora con noi</Link>
+            <Link to="/preventivo">Chiedi un Preventivo</Link>
           </li>
 
           <li>
@@ -169,7 +169,7 @@ function Header() {
           </li>
 
           <li>
-            <Link to="/lavoraConNoi">Lavora con noi</Link>
+            <Link to="/preventivo">Chiedi un Preventivo</Link>
           </li>
 
           <li>

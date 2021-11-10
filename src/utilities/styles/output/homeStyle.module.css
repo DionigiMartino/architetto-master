@@ -700,7 +700,7 @@
 }
 .cont__home_bannerClienti > div {
   width: 100%;
-  height: 250px;
+  height: fit-content;
   background-color: #fff;
   display: flex;
   align-items: center;
@@ -709,7 +709,7 @@
 }
 .cont__home_bannerClienti > div > ul {
   width: 80%;
-  height: 200px;
+  height: fit-content;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -735,9 +735,9 @@
   background-color: #d1d1d1;
 }
 .cont__home_bannerClienti > div > ul > li {
-  width: 20%;
+  width: 10%;
   margin: 10px 20px;
-  height: 180px;
+  height: 150px;
 }
 .cont__home_bannerClienti > div > ul > li > img {
   width: 100%;

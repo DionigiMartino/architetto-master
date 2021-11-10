@@ -16,7 +16,7 @@ function ContactForm(props) {
 
   return (
     <>
-      <h2 className={contactStyle.cont__form_title}>Lavora con noi</h2>
+      <h2 className={contactStyle.cont__form_title}>Chiedi un Preventivo</h2>
 
       <form method="POST" className={contactStyle.cont__form} action={formmail}>
         <div>

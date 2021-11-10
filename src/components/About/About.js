@@ -8,6 +8,8 @@ function About() {
   useEffect(() => {
     document.title =
       "Chi Siamo - Un Team Organizzato ed Efficiente | CoProject Studio";
+
+    window.scrollTo(0, 0);
   });
 
   return (
@@ -15,28 +17,29 @@ function About() {
       <Intro section="about" title="Team Organizzato ed Efficiente" />
 
       <div className={aboutStyle.cont__about_descr}>
-        <div className={aboutStyle.cont__about_descr_firstSection}>
-          <h3>
-            <b>CoProject</b> STUDIO
-          </h3>
-
-          <p>
-            Il <b>nostro Team</b> è composto da <b>professionisti esperti</b> in
-            questo campo e segue un rigido <b>organigramma</b> aziendale che ci
-            permette di replicare <b>qualità ed esperienza</b> in ogni gara.
-          </p>
-        </div>
-
         <div className={aboutStyle.cont__about_division}>
-          <p>
-            L’impostazione <b>gerarchica</b> ci permette una gestione
-            superpartes della
-            <b> qualità</b> di ogni singola gara con relativo monitoraggio e{" "}
-            <b>verifica </b>
-            pre-consegna. Lo <b>studio</b> è composto da <b>professionisti</b>{" "}
-            operanti, responsabili di gara e consulenti esterni da mettere a
-            disposizione della specifica commessa.
-          </p>
+          <div>
+            <h3>
+              <b>CoProject</b> STUDIO
+            </h3>
+
+            <p>
+              Il <b>nostro Team</b> è composto da <b>professionisti esperti</b>{" "}
+              in questo campo e segue un rigido <b>organigramma</b> aziendale
+              che ci permette di replicare <b>qualità ed esperienza</b> in ogni
+              gara.
+            </p>
+
+            <p>
+              L’impostazione <b>gerarchica</b> ci permette una gestione
+              superpartes della
+              <b> qualità</b> di ogni singola gara con relativo monitoraggio e{" "}
+              <b>verifica </b>
+              pre-consegna. Lo <b>studio</b> è composto da <b>professionisti</b>{" "}
+              operanti, responsabili di gara e consulenti esterni da mettere a
+              disposizione della specifica commessa.
+            </p>
+          </div>
 
           <img
             src={Tabella_1}
@@ -96,15 +99,27 @@ function About() {
             <h2>La nostra mission</h2>
           </div>
 
-          <p>
-            Il nostro <b>obiettivo primario</b> non è partecipare alla gara, ma
-            ottenere <b> l'obiettivo primario</b>. Con l’impresa che ci affida l’incarico
-            abbiamo in comune questo <b>obiettivo</b>, poichè con il premio
-            aggiudicazione che ci viene riconosciuto troviamo nella vittoria{" "}
-            <b>soddisfazione economica</b>, oltre che <b>professionale</b>, ed è
-            per l’impresa garanzia di <b>impegno al 100%</b>. Con l’impresa
-            siamo complici e se vince, <b>vinciamo anche noi!</b>
-          </p>
+          <div>
+
+            <p>
+              La preparazione dell’offerta tecnica non ha mai carattere generico
+              e si avvale sempre dell’<b>apporto specialistico</b> delle varie
+              materie, anche con consulenti esterni, per garantire sempre un
+              alto <b>indice di specificità</b>
+              che fa la differenza.
+            </p>
+
+            <p>
+              Il nostro <b>obiettivo primario</b> non è partecipare alla gare,
+              ma ottenere <b> l'obiettivo primario</b>. Con l’impresa che ci
+              affida l’incarico abbiamo in comune questo <b>obiettivo</b>,
+              poichè con il premio aggiudicazione che ci viene riconosciuto
+              troviamo nella vittoria <b>soddisfazione economica</b>, oltre che{" "}
+              <b>professionale</b>, ed è per l’impresa garanzia di{" "}
+              <b>impegno al 100%</b>. Con l’impresa siamo complici e se vince,{" "}
+              <b>vinciamo anche noi!</b>
+            </p>
+          </div>
         </div>
 
         <img
@@ -113,16 +128,6 @@ function About() {
           className={aboutStyle.cont__about_images}
         />
       </div>
-
-      <h1>APPROCCIO MULTI-DISCIPLINARE ALL’OFFERTA TECNICA</h1>
-
-      <p>
-        La preparazione dell’offerta tecnica non ha mai carattere generico e si
-        avvale sempre dell’<b>apporto specialistico</b> delle varie materie,
-        anche con consulenti esterni, per garantire sempre un alto{" "}
-        <b>indice di specificità</b>
-        che fa la differenza.
-      </p>
     </div>
   );
 }

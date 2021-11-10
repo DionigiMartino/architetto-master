@@ -35,6 +35,8 @@ import image22 from "../../utilities/media/img/clienti/22.png";
 import image23 from "../../utilities/media/img/clienti/23.png";
 import image24 from "../../utilities/media/img/clienti/24.png";
 import image25 from "../../utilities/media/img/clienti/25.png";
+import image26 from "../../utilities/media/img/clienti/26.png";
+import image27 from "../../utilities/media/img/clienti/27.png";
 
 import italia from '../../utilities/media/img/italia.png'
 
@@ -65,6 +67,8 @@ function Home() {
     image23,
     image24,
     image25,
+    image26,
+    image27
   ];
 
   const listOfServices = [
@@ -80,7 +84,7 @@ function Home() {
     },
     {
       title: "Servizi Post-Aggiudicazione",
-      link: "",
+      link: "/offerteTecniche",
       element: 3,
     },
     {

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Intro from "../Header/Intro";
 import contactStyle from "../../utilities/styles/output/section.module.css";
 import ContactForm from "../ContactForm";
@@ -6,19 +6,45 @@ import ContactForm from "../ContactForm";
 import footerStyle from "../../utilities/styles/output/footer.module.css";
 
 function ContactPage() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  });
+
   return (
     <div className={contactStyle.cont__about}>
       <Intro section="contact" title="Contatti" />
 
       <p style={{ textAlign: "center" }}>
-        Se hai domande inerenti ai nostri servizi,{" "}
-        <b>non esitare a contattarci </b>
-        compilando il modulo sottostante, ci metteremo al più presto in contatto
-        con te.
+        Chiedici Informazioni <br />
+        Per qualsiasi domanda non esitare a contattarci. <br />
+        Ti risponderemo il prima possibile.
       </p>
 
       <div className={contactStyle.cont__about_descr_firstSection}>
         <div className={contactStyle.cont__about_descr_firstSection_info}>
+          <ul className={footerStyle.cont__footer_contactList} id="contatti">
+            <div>
+              <li>Segreteria/Amministrazione: </li>
+
+              <li>
+                <a href="mailto:info@coproject-studio.it">
+                  info@coproject-studio.it
+                </a>
+              </li>
+            </div>
+
+            <div>
+              <li>Ufficio Gare:</li>
+
+              <li>
+                <a href="mailto:gare@coproject-studio.it">
+                  gare@coproject-studio.it
+                </a>
+              </li>
+            </div>
+          </ul>
+
+          <h3>Dove siamo</h3>
           <ul className={footerStyle.cont__footer_contactList} id="contatti">
             <div>
               <li>Sede Operativa Teano:</li>
@@ -41,24 +67,6 @@ function ContactPage() {
 
               <li>
                 <a href="tel:+393287245625">+39 328 724 5625</a>
-              </li>
-            </div>
-
-            <div>
-              <li>Segreteria/Amministrazione: </li>
-
-              <li>
-                <a href="mailto:info@coproject-studio.it">
-                  info@coproject-studio.it
-                </a>
-              </li>
-
-              <li>Ufficio Gare:</li>
-
-              <li>
-                <a href="mailto:gare@coproject-studio.it">
-                  gare@coproject-studio.it
-                </a>
               </li>
             </div>
           </ul>

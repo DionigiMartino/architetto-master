@@ -2,10 +2,10 @@ import React, { useState } from "react";
 import homeStyle from "../../utilities/styles/output/homeStyle.module.css";
 import polo from "../../utilities/media/img/scores/polo_bibliotecario.jpg";
 import altilia from "../../utilities/media/img/scores/altilia.jpg";
-import saint from "../../utilities/media/img/scores/saint.jpg";
+import bologna from "../../utilities/media/img/scores/bologna.jpg";
 import genova from "../../utilities/media/img/scores/genova.jpg";
 import jona from "../../utilities/media/img/scores/jona.jpg";
-import torrenova from "../../utilities/media/img/scores/torrenova.jpg";
+import lecco from "../../utilities/media/img/scores/lecco.jpg";
 import image1 from "../../utilities/media/img/scores/1.jpeg";
 import image2 from "../../utilities/media/img/scores/2.jpeg";
 import image3 from "../../utilities/media/img/scores/3.jpeg";
@@ -88,12 +88,12 @@ function LastScore(props) {
       title: "Stadio Mancini - Fano (PU)",
     },
     {
-      image: saint,
-      place: 3,
+      image: bologna,
+      place: 1,
       text: "Affidamento dei lavori di miglioramento architettonico, energetico e strutturale sulla piscina di proprietà regionale - Pré-Saint-Didier (AO).",
-      import: "3.393.723,24",
-      category: "OG2|OS6|OS30|OS22",
-      title: "Piscina di proprietà regionale - Pré-Saint-Didier (AO)",
+      import: "2.303.733,25",
+      category: "OG2|OS32",
+      title: "Liceo Scientifico Laura Bassi - Bologna (BO)",
     },
     {
       image: polo,
@@ -105,20 +105,20 @@ function LastScore(props) {
         "Polo bibliotecario Della Puglia Presso ex caserma Rossani - Bari. (BA)",
     },
     {
-      image: torrenova,
-      place: 3,
-      text: "Affidamento lavori di ristrutturazione edilizia ed adeguamento sismico della scuola media di Via Marconi nel Comune di Torrenova.",
-      import: "1.225.273,59",
-      category: "OG1",
-      title: "Scuola Media di Via Marconi - Torrenova (ME)",
+      image: lecco,
+      place: 2,
+      text: "Affidamento dei lavori di ristrutturazione e riqualificazione edificio Cereghini, Palazzo di Giustizia di Lecco (LC)",
+      import: "5.883.077,31",
+      category: "OG2|OG11|OS7|OS6|OS18A",
+      title: "Riqualificazione Palazzo di Giustizia di Lecco - (LC)",
     },
     {
       image: altilia,
       place: 1,
-      text: "Affidamento dei lavori di Recupero e valorizzazione delle grotte eremitiche di San Francesco di Paola.",
-      import: "237.000,00 €",
-      category: "OG2|OG11",
-      title: "Grotte Eremetiche di S. Francesco di Paola - Altilia (CS)",
+      text: "Affidamento lavori di realizzazione di un Polo Unico per l'espletamento delle fasi concorsuali della Polizia di Stato e collocazione della struttura organizzativa di supporto all'interno del Compendio Immobiliare della Caserma S. Gelsomini di Roma.",
+      import: "2.570.103,68 €",
+      category: "OG11|OG1",
+      title: "Realizzazione Polo Unico Per espletamento fasi concorsuali della polizia di stato presso casertam S. Gelsomini (ROMA)",
     },
   ];
 

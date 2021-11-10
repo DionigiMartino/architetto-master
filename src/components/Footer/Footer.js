@@ -19,7 +19,7 @@ function Footer() {
 
         <ul className={footerStyle.cont__footer_logoSocial_social}>
           <li>
-            <a href="www.instagram.com/coproject_studio/ ">
+            <a href="https://www.instagram.com/coproject_studio/">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="34.19"
@@ -64,7 +64,7 @@ function Footer() {
           </li>
 
           <li>
-            <a href="https://twitter.com/MicsaStudio">
+            <a href="#">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="21.763"
@@ -128,7 +128,7 @@ function Footer() {
               </g>
             </svg>
 
-            <a href="/">Via Antonio Gramsci, 1 – 81057 Teano (CE)</a>
+            <a href="https://goo.gl/maps/Up86yUMGbpwVirLX6">Via Antonio Gramsci, 1 – 81057 Teano (CE)</a>
           </li>
 
           <li>
@@ -178,7 +178,7 @@ function Footer() {
               </g>
             </svg>
 
-            <a href="/">P.zzale Antonio Baiamonti 3, 20154 Milano</a>
+            <a href="https://goo.gl/maps/yJtnJC2yXn7WkhuHA">P.zzale Antonio Baiamonti, 3 - 20154 Milano (MI)</a>
           </li>
 
           <li>

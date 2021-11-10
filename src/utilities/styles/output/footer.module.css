@@ -54,7 +54,10 @@
   font-weight: bold;
 }
 .cont__footer_contactList[id=contatti] {
-  width: 80%;
+  width: 100%;
+}
+.cont__footer_contactList[id=contatti] > div {
+  width: 45%;
 }
 .cont__footer_contactList[id=contatti] > div > li {
   color: #393e3f;

@@ -60,7 +60,11 @@
     font-weight: bold;
 
     &[id="contatti"]{
-      width: 80%;
+      width: 100%;
+
+      & > div {
+        width: 45%;
+      }
 
       & > div > li {
         color: $black_color;
